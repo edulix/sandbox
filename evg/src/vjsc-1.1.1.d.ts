@@ -21,6 +21,7 @@ export declare namespace arithm {
         div(other: LargeInteger): LargeInteger
 
         toByteArray(): Uint8Array
+        toHexString(): string
         toByteArrayAlt(): Uint8Array
     }
 
@@ -47,6 +48,7 @@ export declare namespace arithm {
         add(other: PRingElement | LargeInteger): PRingElement
         sub(other: PRingElement | LargeInteger): PRingElement
         inv(): PRingElement
+        toString(): string
     }
 
     class PFieldElement extends PRingElement {
